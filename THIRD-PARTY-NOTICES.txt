@@ -1,0 +1,17 @@
+THIRD-PARTY SOFTWARE NOTICES (informational)
+
+This Windows x64 distribution includes a self-contained Microsoft .NET 10
+and Windows Desktop runtime plus dependencies used by Tally.
+
+Microsoft .NET / WPF:
+  https://github.com/dotnet/runtime/blob/main/LICENSE.TXT
+  https://dotnet.microsoft.com/platform/free
+Microsoft.Data.Sqlite / EF Core:
+  https://github.com/dotnet/efcore/blob/main/LICENSE.txt
+SQLitePCLRaw:
+  https://github.com/ericsink/SQLitePCL.raw/blob/master/LICENSE
+SQLite:
+  https://www.sqlite.org/copyright.html
+
+Embedded or bundled third-party libraries retain their original terms.
+The proprietary Tally application terms do not supersede these licenses.

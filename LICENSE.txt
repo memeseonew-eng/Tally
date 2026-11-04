@@ -1,0 +1,31 @@
+TALLY DESKTOP BETA - END-USER TERMS
+Version 0.5.0 Beta 1 | November 2026
+
+Copyright (c) 2026 Tally contributors. All rights reserved.
+
+Tally is currently distributed as proprietary, binary-only desktop software.
+Permission is granted to individual users to download, install and run the
+compiled software for personal or internal evaluation, and to keep their own
+backup copies of the downloaded binary package.
+
+Except where applicable law grants the right, no permission is granted to
+redistribute, resell, repackage, rebrand, sublicense, or publish Tally's
+application binaries, source code, original interface artwork, icon designs,
+shader resources or other proprietary assets as a competing product.
+No permission is granted to claim authorship of these original assets.
+This agreement does not restrict uses or exceptions required by applicable law.
+
+The software is offered as an early beta "AS IS", without warranties.
+Please back up your personal data before trying a new beta build.
+
+Tally does not require a cloud account or bank connection. Tally records
+expenses and scheduled plans locally. Recorded payments are entered manually
+and future forecasts are not automatically settled as paid.
+
+IMPORTANT: Microsoft .NET, Microsoft.Data.Sqlite, SQLitePCLRaw and other
+third-party runtime components retain their own respective license terms.
+These notices do not change the rights granted by their original licenses.
+See THIRD-PARTY-NOTICES.txt for component references.
+
+Publisher / support / downloads:
+https://github.com/memeseonew-eng/Tally
