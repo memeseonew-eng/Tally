@@ -1,25 +1,24 @@
 ---
 name: Beta bug report
-about: Report a bug without exposing private financial information
+about: Report a bug with synthetic or anonymized information
 title: "[Beta] "
 labels: bug
 assignees: ''
 ---
 
 ## Tally version and edition
-(e.g. v0.5.0-beta.1, Portable or Setup)
+(e.g. v0.5.4-beta.2, Portable or Setup)
 
 ## What happened?
-Provide a brief description.
 
-## Steps using synthetic or anonymized data
+## Reproduction with synthetic or anonymized data
 1.
 2.
 3.
 
 ## Expected behavior
 
-## Windows version / display scaling
+## Windows version / display scaling / animation settings
 
 ## Sanitized screenshot (optional)
-Never upload your Tally data/ folder, tally.sqlite, receipts, personal paths or real balances.
+Never upload your actual data/ folder, tally.sqlite, receipts, private wallpaper, banking records or private development source/save ZIP.

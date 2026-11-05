@@ -2,35 +2,36 @@
     "Schema":  1,
     "Project":  "Tally",
     "Channel":  "beta",
-    "Version":  "0.5.0-beta.1",
-    "Tag":  "v0.5.0-beta.1",
+    "Version":  "0.5.4-beta.2",
+    "Tag":  "v0.5.4-beta.2",
     "Prerelease":  true,
     "Platform":  "Windows 10/11 x64",
     "BundledRuntime":  "10.0.14",
     "HomePage":  "https://github.com/memeseonew-eng/Tally",
-    "ReleasePage":  "https://github.com/memeseonew-eng/Tally/releases/tag/v0.5.0-beta.1",
+    "ReleasePage":  "https://github.com/memeseonew-eng/Tally/releases/tag/v0.5.4-beta.2",
     "AllReleases":  "https://github.com/memeseonew-eng/Tally/releases",
     "AutomaticUpdate":  false,
     "CreatedDate":  "2026-11-05",
     "Files":  [
                   {
                       "Edition":  "Portable",
-                      "Filename":  "Tally-Portable-v0.5.0-beta.1-win-x64.zip",
-                      "Sha256":  "D2B0CB2A4888CCAC30492050FC368876C210D52FC4A1A123E1F6CC5F2D05FEC4",
-                      "Bytes":  75159820,
-                      "DownloadUrl":  "https://github.com/memeseonew-eng/Tally/releases/download/v0.5.0-beta.1/Tally-Portable-v0.5.0-beta.1-win-x64.zip"
+                      "Filename":  "Tally-Portable-v0.5.4-beta.2-win-x64.zip",
+                      "Sha256":  "59B95160F1D9DE218087AC76234657B354D15B81573F841BAB843C2909A801F0",
+                      "Bytes":  75171016,
+                      "DownloadUrl":  "https://github.com/memeseonew-eng/Tally/releases/download/v0.5.4-beta.2/Tally-Portable-v0.5.4-beta.2-win-x64.zip"
                   },
                   {
                       "Edition":  "Setup",
-                      "Filename":  "Tally-Setup-v0.5.0-beta.1-win-x64.exe",
-                      "Sha256":  "549977134D88C04FABD0B361F76683B576BD2ED94F85CAD255576DBE2A5981E0",
-                      "Bytes":  53421428,
-                      "DownloadUrl":  "https://github.com/memeseonew-eng/Tally/releases/download/v0.5.0-beta.1/Tally-Setup-v0.5.0-beta.1-win-x64.exe"
+                      "Filename":  "Tally-Setup-v0.5.4-beta.2-win-x64.exe",
+                      "Sha256":  "BEBAE1C582A8809E1448C6D7F39FBF7D46F66D08AE2EFE9D61AF5E26329A23CF",
+                      "Bytes":  53429255,
+                      "DownloadUrl":  "https://github.com/memeseonew-eng/Tally/releases/download/v0.5.4-beta.2/Tally-Setup-v0.5.4-beta.2-win-x64.exe"
                   }
               ],
-    "ChecksumsUrl":  "https://github.com/memeseonew-eng/Tally/releases/download/v0.5.0-beta.1/SHA256SUMS.txt",
+    "ChecksumsUrl":  "https://github.com/memeseonew-eng/Tally/releases/download/v0.5.4-beta.2/SHA256SUMS.txt",
     "LocalData":  {
                       "Setup":  "%LOCALAPPDATA%\\Tally\\data",
                       "Portable":  "data/ beside Tally.exe"
-                  }
+                  },
+    "PreviousReleaseTag":  "v0.5.0-beta.1"
 }

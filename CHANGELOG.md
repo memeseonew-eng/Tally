@@ -1,5 +1,17 @@
 # Tally release history
 
+## 0.5.4 Beta 2 (2026-11-05)
+Second public Windows x64 beta: the widget becomes a more useful independent companion while the default layout stays quiet.
+
+- **Widget quick note:** Optional 1,500-character private scratchpad, autosave/manual save, guarded atomic updates and explicit recovery.
+- **Direct widget management:** Edit/add everyday expenses and subscriptions, and confirm scheduled payments without opening the full workspace.
+- **Single adaptive primary action:** The widget's large button changes between + Expense and + Subscription; duplicate small add actions were removed.
+- **One-click widget close:** A dedicated X hides only the widget and preserves the tray and safe note closure.
+- **Connected motion:** Widget-to-workspace opening and a complementary reverse close, subtle navigation and button feedback, and short native currency/category/billing/calendar *opening* animations.
+- **Keyboard-safe dropdowns:** Escape/Tab and selection remain immediate; no delayed dropdown closing fade.
+- **Distribution and privacy:** New self-contained Portable and Setup, public hashes and synthetic screenshots, no private code/data uploaded, manual update links.
+- **Preserved foundations:** Currency-separated recorded spending, subscriptions, linked paid history, receipts, optional Style Studio, local SQLite and full-data backups.
+
 ## 0.5.0 Beta 1 (2026-11-05)
 First public Windows x64 beta.
 
