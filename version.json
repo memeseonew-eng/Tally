@@ -17,17 +17,17 @@
     "Files":  [
                   {
                       "Edition":  "Portable",
-                      "Sha256":  "88D860AC94B640B477AD3D8C997DD279AF23ECE8C4FADFCEA74D26A6764C522E",
+                      "Sha256":  "18A92825AEAB09E26B0A5F83975A5AC857720A8A9C029E5941246A20A450527E",
                       "DownloadUrl":  "https://github.com/memeseonew-eng/Tally/releases/download/v0.5.11-preview.27/Tally-Portable-v0.5.11-preview.27-win-x64.zip",
                       "Filename":  "Tally-Portable-v0.5.11-preview.27-win-x64.zip",
-                      "Bytes":  86667220
+                      "Bytes":  86667218
                   },
                   {
                       "Edition":  "Setup",
-                      "Sha256":  "F2A381DAFBD8751A5C1DB3D7BC58204DBEAA99AC4ADE85DDEE02DCE613725B9A",
+                      "Sha256":  "C6CE76316BF1E2C6AC850BFBB16E4A16536B5947FA657E109E6F4B6740A51D26",
                       "DownloadUrl":  "https://github.com/memeseonew-eng/Tally/releases/download/v0.5.11-preview.27/Tally-Setup-v0.5.11-preview.27-win-x64.exe",
                       "Filename":  "Tally-Setup-v0.5.11-preview.27-win-x64.exe",
-                      "Bytes":  62056759
+                      "Bytes":  62039670
                   }
               ],
     "ChecksumsUrl":  "https://github.com/memeseonew-eng/Tally/releases/download/v0.5.11-preview.27/SHA256SUMS.txt",
