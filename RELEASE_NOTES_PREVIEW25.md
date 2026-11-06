@@ -1,3 +1,5 @@
+> **Newer release:** [Preview27](https://github.com/memeseonew-eng/Tally/releases/tag/v0.5.11-preview.27) adds minimize/restore motion and verified persistent pane placement. The notes below describe historical Preview25.
+
 # Tally 0.5.11 Preview 25 — A calmer, more flexible workspace
 
 **A local-first place for spending, subscriptions, Daily tasks, Notes and Collections.** This public preview brings together the UI16-qualified application changes since Beta2, without publishing the private application source.

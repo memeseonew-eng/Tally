@@ -8,7 +8,7 @@ Use the top split button to separate navigation and content. The small navigatio
 
 Small-card X rejoins; large-card X hides that workspace. Selecting a navigation row brings the workspace back, including the current row. Use Quit Tally for a complete exit. To join by proximity, align facing left/right edges, pause about 440 ms and release after the frosted cue strengthens. Retreat or Escape cancels. A quick pass or stationary adjacency cannot join by itself.
 
-Preview25 does not remember the two separate window positions across a full process restart. The upcoming candidate is deliberately not in this public package.
+Preview27 remembers the combined window position/size and both separate card placements across restart. An intentionally hidden Workspace stays hidden until selected. Minimized exits preserve normal bounds. Missing-monitor placements are recovered while accessible partly-offscreen layouts remain. Widget-first startup does not overwrite the saved workspace. Minimize and restore use a short matching animation; system animation/high-contrast settings remain authoritative.
 
 ## Spending and schedules
 Expenses are records of actual spending. Subscription schedules are forecasts until a payment is explicitly recorded. Do not treat a forecast as a settled payment. Currency totals remain separate; Tally does not download exchange rates or silently convert currencies.
@@ -27,7 +27,7 @@ Portable: keep the existing data/ beside Tally.exe. Setup: the installer uses th
 ## Troubleshooting
 - Too large? Windows scaling changes physical window size. The default is 1040x700 logical units, around 1300x875 physical pixels at 125%. Fonts are unchanged.
 - Cannot find a hidden workspace? Select a row in the remaining navigation card, or use Open Tally from the tray/widget.
-- Old download page? Preview25's legacy in-app shortcut may open Beta2. Follow that page's current-release notice or use the README download buttons.
+- Old download page? Older builds may open Beta2 or Preview25. Preview27 uses the updated official download destination; the README also provides versioned links.
 - Unsigned-publisher warning? This preview is unsigned. Check the release hashes; keep security protections enabled.
 - Different result on another display? Report resolution, scale, monitor arrangement, theme, build and reproduction steps. Mixed-DPI and all GPUs/Windows versions are not comprehensively certified.
 

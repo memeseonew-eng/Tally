@@ -7,9 +7,9 @@ A local-first Windows workspace for expenses, subscriptions, daily tasks, notes 
 
 **No account · No required cloud service · Portable or installed · Your data stays local**
 
-[**Download Portable ZIP**](https://github.com/memeseonew-eng/Tally/releases/download/v0.5.11-preview.25/Tally-Portable-v0.5.11-preview.25-win-x64.zip) · [**Download Windows Setup**](https://github.com/memeseonew-eng/Tally/releases/download/v0.5.11-preview.25/Tally-Setup-v0.5.11-preview.25-win-x64.exe) · [Release notes](RELEASE_NOTES_PREVIEW25.md) · [All versions](https://github.com/memeseonew-eng/Tally/releases)
+[**Download Portable ZIP**](https://github.com/memeseonew-eng/Tally/releases/download/v0.5.11-preview.27/Tally-Portable-v0.5.11-preview.27-win-x64.zip) · [**Download Windows Setup**](https://github.com/memeseonew-eng/Tally/releases/download/v0.5.11-preview.27/Tally-Setup-v0.5.11-preview.27-win-x64.exe) · [Release notes](RELEASE_NOTES_PREVIEW27.md) · [All versions](https://github.com/memeseonew-eng/Tally/releases)
 
-**Current public build: 0.5.11-preview.25 · Windows x64 · Unsigned prerelease**
+**Current public build: 0.5.11-preview.27 · Windows x64 · Unsigned prerelease**
 
 </div>
 
@@ -44,7 +44,7 @@ To join them again, use the join button or bring their facing left/right edges c
 
 The default full window is **1040 × 700 logical units** — approximately **1300 × 875 pixels at 125% Windows scaling**. Text size is not reduced to make the window smaller. Light/dark themes, local wallpapers and optional appearance controls share the same visual language. Motion is brief and interruptible; Windows animation and high-contrast choices are respected by the motion policy.
 
-> **Not included in this build:** remembering separate window positions across a complete application restart. This remains in the next development candidate and is deliberately not advertised as shipped.
+**New in Preview27:** a matching minimize/restore animation for joined and separate cards, reliable full-width fast dragging, and saved positions/sizes for joined or separated workspaces across process restarts. No extra settings are required.
 
 ## Keep your day close
 
@@ -96,13 +96,13 @@ See [USAGE.md](USAGE.md) for pane behavior, profiles, backups and troubleshootin
 
 ## Trust, status and limitations
 
-This is an **unsigned evaluation build**, not a final stable release. Windows may warn about an unrecognized publisher. Compare the downloaded file with [SHA256SUMS.txt](https://github.com/memeseonew-eng/Tally/releases/download/v0.5.11-preview.25/SHA256SUMS.txt), and keep your security protections enabled.
+This is an **unsigned evaluation build**, not a final stable release. Windows may warn about an unrecognized publisher. Compare the downloaded file with [SHA256SUMS.txt](https://github.com/memeseonew-eng/Tally/releases/download/v0.5.11-preview.27/SHA256SUMS.txt), and keep your security protections enabled.
 
-The public packages contain the exact application DLL previously qualified as Preview25. Qualification includes 1,161 UI checks, pane-geometry checks and real-pointer checks on Windows 11 x64 at 125% scaling. Packaging was separately checked by extracting and hashing every portable file. Installer compilation is verified; fresh install/uninstall testing for this packaging run was not performed while a personal Tally session was running.
+Preview27 passed 1,282 UI regression checks with zero binding errors, 86 pane-geometry checks and focused data/lifecycle suites. Real-window acceptance covered minimize/restore and rapid dragging plus process restarts with saved separate positions. The packaged application DLL is the tested one. Portable extraction and every file hash are checked; Setup compilation/static data-retention checks are not a claim of fresh installer install/uninstall qualification.
 
-Other Windows versions, GPUs, mixed-DPI monitors and complete accessibility coverage are not comprehensively certified. Windows 10 is permitted by the installer, but that is not a claim of fresh Windows 10 testing.
+Testing applies to the current Windows 11 x64 device; other Windows versions, GPUs, mixed-DPI monitor arrangements and full accessibility coverage remain separate qualification work. The installer permits Windows 10 but that is not a fresh Windows 10 certification.
 
-The legacy in-app beta download shortcut may still open the older Beta2 page. That page now points to this release; the download buttons at the top of this README always name the current public package. Updates remain manual. There is no bank connection, automatic currency conversion or built-in cloud synchronization.
+The in-app official download destination now points to Preview27. Updates remain manual; there is no bank connection, automatic currency conversion or built-in cloud sync. US stock charts are a feasibility study only, not a feature in this package.
 
 ## Feedback and project boundaries
 

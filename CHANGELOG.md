@@ -1,3 +1,14 @@
+# Current public release — 0.5.11-preview.27 (2026-11-06)
+
+- Adds matching minimize/restore motion to joined and separate panes without changing native geometry or remembered placement.
+- Completes and validates full-width fast caption capture and persistent joined/separated window positions, sizes, order and hidden Workspace state.
+- Cancels stale minimize completions on restore/close/join and respects the Windows motion policy.
+- Updates in-app official release URLs and public Portable/Setup/download metadata.
+- No stock-chart provider, browser dependency, account integration or new option is bundled. Chart feasibility is tracked separately.
+
+See [Preview27 release notes](RELEASE_NOTES_PREVIEW27.md).
+
+---
 # Current public release — 0.5.11-preview.25 (2026-11-06)
 
 - Publishes the qualified Preview25 binary, adding Daily tasks, full Notes/folders/tabs/attachments and Collections since Beta2.

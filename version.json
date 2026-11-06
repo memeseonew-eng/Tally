@@ -1,47 +1,47 @@
-{
+﻿{
     "Schema":  1,
     "Project":  "Tally",
     "Channel":  "preview",
-    "Version":  "0.5.11-preview.25",
-    "Tag":  "v0.5.11-preview.25",
+    "Version":  "0.5.11-preview.27",
+    "Tag":  "v0.5.11-preview.27",
     "Prerelease":  true,
-    "Platform":  "Windows x64; Windows 11 / 125% qualified",
+    "Platform":  "Windows x64; current Windows 11 device qualified",
     "BundledRuntime":  "10.0.14",
     "HomePage":  "https://github.com/memeseonew-eng/Tally",
-    "ReleasePage":  "https://github.com/memeseonew-eng/Tally/releases/tag/v0.5.11-preview.25",
+    "ReleasePage":  "https://github.com/memeseonew-eng/Tally/releases/tag/v0.5.11-preview.27",
     "AllReleases":  "https://github.com/memeseonew-eng/Tally/releases",
     "AutomaticUpdate":  false,
     "CreatedDate":  "2026-11-06",
-    "ApplicationDllSha256":  "0070EF9AE9AA05F29E640F19884C5E81A4111C93B72396DB64B4FDB190CDCAAE",
-    "ApplicationRebuilt":  false,
+    "ApplicationDllSha256":  "F21ADFA4661958749B152C2D91581ECBEE8F848187E4A8F5B10D2F66AA5189C2",
+    "ApplicationRebuilt":  true,
     "Files":  [
                   {
                       "Edition":  "Portable",
-                      "Sha256":  "3AA76C926F5AFB263A64E80CCABF2A283A818338920F3C6D7A9FA58CEA992CA8",
-                      "DownloadUrl":  "https://github.com/memeseonew-eng/Tally/releases/download/v0.5.11-preview.25/Tally-Portable-v0.5.11-preview.25-win-x64.zip",
-                      "Filename":  "Tally-Portable-v0.5.11-preview.25-win-x64.zip",
-                      "Bytes":  86657653
+                      "Sha256":  "88D860AC94B640B477AD3D8C997DD279AF23ECE8C4FADFCEA74D26A6764C522E",
+                      "DownloadUrl":  "https://github.com/memeseonew-eng/Tally/releases/download/v0.5.11-preview.27/Tally-Portable-v0.5.11-preview.27-win-x64.zip",
+                      "Filename":  "Tally-Portable-v0.5.11-preview.27-win-x64.zip",
+                      "Bytes":  86667220
                   },
                   {
                       "Edition":  "Setup",
-                      "Sha256":  "FDFFCCBF9CE6F8A147A8CD394CFFD4E8AE8B21EB67BCCF841627C2F967DBE35F",
-                      "DownloadUrl":  "https://github.com/memeseonew-eng/Tally/releases/download/v0.5.11-preview.25/Tally-Setup-v0.5.11-preview.25-win-x64.exe",
-                      "Filename":  "Tally-Setup-v0.5.11-preview.25-win-x64.exe",
-                      "Bytes":  62047362
+                      "Sha256":  "F2A381DAFBD8751A5C1DB3D7BC58204DBEAA99AC4ADE85DDEE02DCE613725B9A",
+                      "DownloadUrl":  "https://github.com/memeseonew-eng/Tally/releases/download/v0.5.11-preview.27/Tally-Setup-v0.5.11-preview.27-win-x64.exe",
+                      "Filename":  "Tally-Setup-v0.5.11-preview.27-win-x64.exe",
+                      "Bytes":  62056759
                   }
               ],
-    "ChecksumsUrl":  "https://github.com/memeseonew-eng/Tally/releases/download/v0.5.11-preview.25/SHA256SUMS.txt",
+    "ChecksumsUrl":  "https://github.com/memeseonew-eng/Tally/releases/download/v0.5.11-preview.27/SHA256SUMS.txt",
     "LocalData":  {
                       "Setup":  "%LOCALAPPDATA%\\Tally\\data",
                       "Portable":  "data/ beside Tally.exe"
                   },
-    "PreviousReleaseTag":  "v0.5.4-beta.2",
+    "PreviousReleaseTag":  "v0.5.11-preview.25",
     "NotIncluded":  [
-                        "Persistent workspace placement across a process restart",
-                        "External plugins / public API / AI integration"
+                        "External plugins / public API / AI integration",
+                        "US stock charts - research only"
                     ],
     "PackagingLimits":  [
-                            "No fresh installer install/uninstall while personal app runs",
-                            "No new native testing for unchanged accepted DLL"
+                            "No fresh installer install/uninstall certification",
+                            "Current Windows 11 device is not mixed-DPI/other-GPU certification"
                         ]
 }
