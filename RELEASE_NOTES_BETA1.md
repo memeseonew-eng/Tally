@@ -1,3 +1,5 @@
+> **A newer public preview is available:** [0.5.11-preview.25](https://github.com/memeseonew-eng/Tally/releases/tag/v0.5.11-preview.25). This page is retained as a historical release record.
+
 # Tally 0.5.0 Beta 1 — A Little More Clarity
 
 **Tally is now available as its first public Windows beta.**

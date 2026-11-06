@@ -1,24 +1,32 @@
 ---
-name: Beta bug report
-about: Report a bug with synthetic or anonymized information
-title: "[Beta] "
+name: Bug report
+about: Report a reproducible problem without sharing private data
+title: ''
 labels: bug
 assignees: ''
 ---
 
-## Tally version and edition
-(e.g. v0.5.4-beta.2, Portable or Setup)
+## Build and installation
+- Tally version (Settings / package name):
+- Portable or Setup:
+- Windows version/build:
+- Resolution and display scaling (each monitor):
+- Light/dark theme; wallpaper enabled:
 
-## What happened?
+## What happened
+Describe the expected and actual result.
 
-## Reproduction with synthetic or anonymized data
+## Steps to reproduce
 1.
 2.
 3.
 
-## Expected behavior
+For pane issues, include which card was separated first, which card was moved,
+which edge was approached, and whether any pane was hidden or minimized.
 
-## Windows version / display scaling / animation settings
+## Redacted screenshot / synthetic example
+Do NOT attach your data/ folder, database, receipts, personal notes, recovery
+ZIP, developer source archive, access tokens or a full financial backup.
 
-## Sanitized screenshot (optional)
-Never upload your actual data/ folder, tally.sqlite, receipts, private wallpaper, banking records or private development source/save ZIP.
+## Reproducibility
+Does it happen on every attempt? Does restarting change the result?

@@ -1,3 +1,15 @@
+# Current public release — 0.5.11-preview.25 (2026-11-06)
+
+- Publishes the qualified Preview25 binary, adding Daily tasks, full Notes/folders/tabs/attachments and Collections since Beta2.
+- Adds detachable navigation/workspace cards, deliberate 440ms release-to-join edge gestures, role-based X behavior and natural workspace reopening.
+- Uses a 1040x700 logical default, consistent page/material motion, shared rounded editor surfaces and corrected dark focused fields.
+- Updates public downloads, screenshots, manual, release notes and checksums. No private application source or personal data is published.
+- Preview26 layout-memory/fast-drag work is intentionally NOT included until native acceptance completes.
+- Packages are unsigned and self-contained (.NET/Windows Desktop 10.0.14). Installer compile and portable extraction are checked; fresh install/uninstall is not certified in this release run.
+
+See [detailed release notes](RELEASE_NOTES_PREVIEW25.md).
+
+---
 # Tally release history
 
 ## 0.5.4 Beta 2 (2026-11-05)

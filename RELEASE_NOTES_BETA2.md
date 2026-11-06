@@ -1,3 +1,5 @@
+> **A newer public preview is available:** [0.5.11-preview.25](https://github.com/memeseonew-eng/Tally/releases/tag/v0.5.11-preview.25). This page is retained as a historical release record.
+
 # Tally 0.5.4 Beta 2 — Your desktop companion, more complete
 
 **A quieter way to keep track of real spending and recurring plans — now with notes, direct widget management, and natural motion.**
