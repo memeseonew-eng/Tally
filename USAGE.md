@@ -1,35 +1,166 @@
 # Using Tally
 
+**0.5.11-preview.33 · 2026-11-07 · Windows x64 · Bundled runtime 10.0.14**
+
+[Overview](README.md) · [Release notes](RELEASE_NOTES_PREVIEW33.md)
+
 ## Start with the right profile
-The portable package starts from Tally.exe and stores data in the adjacent data/ folder. Open-Full-Tally.cmd opens the full workspace directly. Setup shortcuts use %LOCALAPPDATA%\Tally\data. The two editions do not automatically share records. The default startup is the desktop widget; open the main workspace through its Open Tally action or the tray menu.
 
-## Windows and cards
-Use the top split button to separate navigation and content. The small navigation card can also be separated from its upper blank drag strip. Grab empty upper space, not the tally wordmark. Buttons keep their own click targets. Resize separated cards at the bottom-right handle.
+The portable edition uses the writable **data/** folder beside **Tally.exe**. Extract the entire portable folder before launching; do not run inside the ZIP or copy only the executable. **Open-Full-Tally.cmd** opens the full workspace directly.
 
-Small-card X rejoins; large-card X hides that workspace. Selecting a navigation row brings the workspace back, including the current row. Use Quit Tally for a complete exit. To join by proximity, align facing left/right edges, pause about 440 ms and release after the frosted cue strengthens. Retreat or Escape cancels. A quick pass or stationary adjacency cannot join by itself.
+Setup shortcuts use **%LOCALAPPDATA%\Tally\data**. Setup and portable folders do not automatically share or import records. Settings & help identifies the active data location. Launching a different profile selects a different dataset; it does not move the original records.
 
-Preview27 remembers the combined window position/size and both separate card placements across restart. An intentionally hidden Workspace stays hidden until selected. Minimized exits preserve normal bounds. Missing-monitor placements are recovered while accessible partly-offscreen layouts remain. Widget-first startup does not overwrite the saved workspace. Minimize and restore use a short matching animation; system animation/high-contrast settings remain authoritative.
+Normal startup opens the desktop widget. Use its workspace launcher or the tray menu to open full Tally.
 
-## Spending and schedules
-Expenses are records of actual spending. Subscription schedules are forecasts until a payment is explicitly recorded. Do not treat a forecast as a settled payment. Currency totals remain separate; Tally does not download exchange rates or silently convert currencies.
+## Windows, cards and quitting
 
-## Daily, Notes and Collections
-Daily holds tasks, optional due dates, completion and archived items. Notes holds local documents, tabs, folders and reference attachments. Text/Markdown import/export does not mean the editor is a live Markdown renderer. Collections offers lists, wishlists, goals and Waiting On views. These features do not imply external plugin compatibility, AI integration or a public API.
+Use the split control to separate Navigation and Workspace. Drag their blank upper caption areas to move them. Buttons and the brand artwork are not interchangeable with those drag areas. Separated cards have a bottom-right resize handle.
 
-## Back up before updating
-1. Quit Tally completely through its menu/tray action.
-2. Run the included Backup-Tally helper or copy the ENTIRE data folder to a private destination.
-3. Verify the backup before replacing program files. Keep SQLite sidecars, documents, attachments, wallpapers, preferences and recovery copies together.
-4. Update the program, then reopen the same profile. Never merge two independently edited databases.
+| Action | Result |
+| --- | --- |
+| Navigation X, while separated | Hides Navigation without joining the cards. |
+| Recall action in Workspace | Shows the hidden Navigation card again at its saved position. |
+| Workspace X | Hides Workspace; select a navigation item or use the widget/tray launcher to return. |
+| Join control | Combines Navigation and Workspace. |
+| Widget X | Hides the widget while the tray remains available. |
+| Quit Tally | Exits the application after pending-save and busy checks allow it. |
 
-Portable: keep the existing data/ beside Tally.exe. Setup: the installer uses the same per-user application identity; uninstall retains the separate personal data folder. A private developer/source ZIP does not contain your personal records unless its manifest explicitly says so. Do not upload profiles or developer saves to public GitHub.
+For edge joining, bring the facing left/right edges together, pause until the frosted cue is ready, then release. A quick pass, early release, retreat or Escape does not confirm a join.
 
-## Troubleshooting
-- Too large? Windows scaling changes physical window size. The default is 1040x700 logical units, around 1300x875 physical pixels at 125%. Fonts are unchanged.
-- Cannot find a hidden workspace? Select a row in the remaining navigation card, or use Open Tally from the tray/widget.
-- Old download page? Older builds may open Beta2 or Preview25. Preview27 uses the updated official download destination; the README also provides versioned links.
-- Unsigned-publisher warning? This preview is unsigned. Check the release hashes; keep security protections enabled.
-- Different result on another display? Report resolution, scale, monitor arrangement, theme, build and reproduction steps. Mixed-DPI and all GPUs/Windows versions are not comprehensively certified.
+Positions, sizes and hidden-pane state are remembered across restart. Tally recovers inaccessible placements when a monitor is no longer available. Closing a pane is not a substitute for Quit when you need a complete shutdown for updating or backup.
 
-## Report a problem safely
-Use Issues with a redacted screenshot and a short, repeatable sequence. Never attach the data folder, private database, receipts, full backup, recovery ZIP, access token or personal document. See SECURITY.md for security-related reports.
+Quit uses a brief transition after its save and busy checks permit shutdown. If a pending save fails or an operation prevents exit, correct the problem and try Quit again; decorative motion does not override that guard.
+
+## Expenses: records, summaries and manual order
+
+Use **+ Expense** to enter a purchase with its name, amount, currency, spending date and category. Notes, receipt photos and reference files can provide context. Expenses represent actual recorded spending.
+
+Choose Week, Month or Year and a currency to review totals. The chart and category shares cover the whole selected period. Search and category filtering narrow the transaction rows without changing those period-wide totals.
+
+Open **Additional · Spending insights** for the average and largest recorded entry, days with recorded spending and top category. **Copy period summary** copies a text summary to the clipboard. The expander opens and closes smoothly; labels and feedback wrap in compact layouts.
+
+### Reorder transactions
+
+Drag a row's name or other non-button body area toward another transaction. Place it above or below the target, then release. The dragged row lifts with its original contour and content, while neighboring rows make room. A soft shadow distinguishes the picked-up row. Press Escape before dropping to cancel.
+
+The order is saved for display. It does not change dates, amounts, currencies, payment links or financial history. Charts still use the recorded dates. Search, category, period and currency changes do not erase the order of records hidden by those filters.
+
+Photos, Files, Edit and Remove/Undo paid remain action controls. Begin a reorder from the row body rather than those buttons.
+
+## Subscriptions: forecasts and payments
+
+Create a subscription with its amount, currency, billing interval and first due date. Upcoming dates and projected costs are schedules. They do not mean a payment has been made.
+
+Choose **Record paid** only when you have paid an occurrence. Its saved amount, currency and paid date become a spending record. Repeating that occurrence does not create a duplicate payment. **Undo paid** reverses the active payment and retains the change in history.
+
+**Archive** pauses future forecasting for a subscription while keeping its history. **Restore** resumes the current schedule. Archiving in Tally does not cancel a service with its provider.
+
+The active Subscriptions list supports saved drag order. Drag the non-button row body, release before/after another row, or press Escape to cancel. Search-hidden subscriptions remain in the complete saved ordering. Reordering does not change billing dates, forecast calculations or payment history.
+
+Currencies remain separate throughout Tally; no exchange-rate download or automatic conversion combines them.
+
+## Daily: capture and complete tasks
+
+Daily offers Today and Tasks, optional due dates, completion/reopen actions and archive visibility. Today distinguishes open, due-today and overdue tasks. Its progress reflects the recorded tasks due by today, rather than an invented score for an empty list.
+
+The optional seven-day view groups tasks by their due date. It does not claim to be a history of when you completed them.
+
+Use the available appearance and density controls when helpful. Deletion is separate from completion or archive and requires confirmation plus recovery protection. Task actions do not write financial spending or mark a subscription as paid.
+
+The widget's Daily mode provides quick capture and a short task preview. Use **Open full Daily** for the complete workspace.
+
+## Notes: documents, folders and actions
+
+Open multiple documents in tabs, search the library and create folders explicitly. **Move** provides a destination picker when you prefer it to dragging. The library only realizes a bounded visible portion of a large list; search, scrolling and export still address the saved collection.
+
+### Export or delete from a row or tab
+
+Right-click a note in the library or its top document tab to open:
+
+- **Export note as TXT…**
+- **Export note as Markdown…**
+- **Delete note…**
+
+The tab menu also opens from its title, blank padding or close-button area, and through Shift+F10 on the focused tab control. Opening the menu alone preserves the active editor. Choosing an action targets the note whose menu you opened.
+
+Ordinary left-click **X** closes a document tab. It does not delete the saved note. Delete requires explicit confirmation and recovery protection. A failed save keeps the draft open instead of silently discarding its text.
+
+### Reorder, move or group notes
+
+| Where you drop | Meaning |
+| --- | --- |
+| Near the top/bottom edge of another note in the same folder | Reorder those library notes. |
+| In the center of another note | Offer the existing named-folder creation flow. |
+| On an existing folder | Move the note to that folder. |
+
+Use the target's narrow top or bottom edge for reordering; its center has a different purpose. The lifted note keeps its original rounded contour and content, and moving neighbors indicate insertion. Escape cancels a drag without saving a new order. Reordering changes display metadata, not document text, folder membership or document-tab order.
+
+For a keyboard alternative, focus a library note and use **Ctrl+Shift+Up/Down** to move it among the visible notes in the same folder.
+
+### Exchange text and reference files
+
+Import real TXT or Markdown files to create local Notes. A note can export individually as TXT/Markdown; folder and all-note exports produce ZIPs of text documents. TXT preserves the saved body, while Markdown includes a document heading and body.
+
+Markdown file support is not a live Markdown renderer or an external-plugin system. An Obsidian deep link is not the contents of a Markdown file; select the actual file when prompted.
+
+Reference attachments are managed local copies. Note-text ZIPs do not include everything required for a complete profile recovery.
+
+## Collections and local attachments
+
+Collections supports Lists, Wishlist, Goals and Waiting On. Mark an item Done, Acquired, Reached or Resolved according to its purpose. Add details, a web reference or an optional review date, choose an icon/photo icon and attach useful files.
+
+These completion actions do not create purchases or financial transactions. Archive keeps a collection available to restore. Delete is explicit, confirmation-protected and available for archived collections too.
+
+The shared attachment manager supports safe images, PDF, text/Markdown/CSV and validated Office document containers. Adding a file copies it into managed storage without deleting the original. Open files explicitly or export copies individually/as ZIP. Keep the managed copies and their metadata in your profile backup.
+
+Images stay within the rounded edges of attachment thumbnails, Collection photo icons and entry covers.
+
+## Widget, motion and notices
+
+Money mode shows recorded spending with Week/Month/Year recent activity and optional category/upcoming details. Daily offers tasks and quick capture. Quick Note is a separate scratchpad; Manage provides the existing expense/subscription editors without requiring a large workspace.
+
+Money/Daily and recent-period changes use horizontal transitions. Money/Daily also has one moving selection highlight behind stable labels. Notes action menus, lifted drag previews, chart/progress reveals and insight expansion use the same brief motion style. The selected view, commands and numeric values update immediately. Motion does not move native window geometry or rewrite financial values.
+
+Command-result notices appear, remain briefly, then dismiss automatically, including unsuccessful command results. A newer command replaces the older notice and gets its own display interval. Dismissal is visual: it does not convert failure into success or discard an unsaved draft. Validation, blocked refresh and unsaved-state explanations remain visible until addressed. Resolve the relevant field, save or recovery condition before retrying a blocked action.
+
+Windows animation and high-contrast policy govern decorative motion. With motion suppressed, controls reach the same final state immediately. This policy is not a claim that every accessibility or monitor combination has been qualified.
+
+## Back up and update
+
+1. Choose **Quit Tally**, then confirm the application has exited.
+2. Back up the entire selected profile. The included **Backup-Tally.ps1** refuses live-profile copies and verifies the archive it creates.
+3. Preserve that backup, then replace program files while retaining the original profile.
+4. Reopen the same profile and verify your records.
+
+Include all SQLite databases and WAL/SHM sidecars, Notes/tasks/Collections, receipts, attachments, icons, wallpaper copies, preferences and recovery files. A single database copy, note export or source Git bundle is not a complete personal backup. Do not merge independently edited profiles.
+
+Setup is configured to retain its separate per-user data folder on uninstall; fresh install/uninstall execution is **NOT_RUN**. A private development recovery ZIP contains source/history and verified programs, but deliberately excludes personal profiles. Never publish either kind of private backup.
+
+## Troubleshooting and reporting
+
+- **Navigation disappeared:** use Workspace's recall action. Use Join only when you want to combine the cards.
+- **Workspace disappeared:** choose a navigation item or open Tally from the widget/tray.
+- **A note drag offers a folder dialog:** you dropped in the center; cancel it and use the top/bottom edge for same-folder order.
+- **A save result faded:** inspect the current record/draft and any relevant validation state; notification expiry does not undo or guarantee a save.
+- **Unexpected profile:** check the active path in Settings & help and the edition/shortcut used.
+- **Window too large:** Windows scaling affects physical pixels; the normal default is 1040 × 700 logical units. Compact navigation stays reachable through its scrolling regions.
+- **Publisher warning:** this is an unsigned preview. Check the official release hashes and keep security protections enabled.
+
+Report the exact version, Windows/display scale, theme and reproduction steps with a redacted screenshot. Do not attach profiles, receipts, private notes, tokens or recovery ZIPs.
+
+## Release verification and scope
+
+**Version 0.5.11-preview.33 · 2026-11-07 · Windows x64**
+
+| Evidence | Result |
+| --- | --- |
+| Automated WPF application checks | 1,635 passed; zero binding errors |
+| Native widget, menu, notice, insights and Quit checks | 10 passed |
+| Native pointer reorder, cancellation and restart checks | 17 passed |
+| Application DLL SHA256 | `459A6F484FF9998319FB85EBD453AFF5B0D99DF459538B40E46F0B2090582FA4` |
+| Recorded native environment | Current Windows 11 x64 device, 96 DPI (100% scaling). |
+| Setup qualification | Compilation and static package/retention checks only. Fresh install/uninstall execution: **NOT_RUN**. |
+
+Native Quit checks confirm guarded exit. PrintWindow captures do not certify the full compositor fade or exact visual timing.
+
+Results apply to the recorded scenarios and exact release program set. Other Windows versions, GPUs, physical mixed-DPI monitor arrangements, complete accessibility coverage and long-running environmental behavior are not certified by these checks. Compilation and static inspection are not fresh installer execution.

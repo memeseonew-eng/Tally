@@ -1,41 +1,41 @@
-﻿{
+{
     "Schema":  1,
     "Project":  "Tally",
     "Channel":  "preview",
-    "Version":  "0.5.11-preview.27",
-    "Tag":  "v0.5.11-preview.27",
+    "Version":  "0.5.11-preview.33",
+    "Tag":  "v0.5.11-preview.33",
     "Prerelease":  true,
-    "Platform":  "Windows x64; current Windows 11 device qualified",
+    "Platform":  "Windows x64; current Windows 11 x64 device at 96 DPI qualified",
     "BundledRuntime":  "10.0.14",
     "HomePage":  "https://github.com/memeseonew-eng/Tally",
-    "ReleasePage":  "https://github.com/memeseonew-eng/Tally/releases/tag/v0.5.11-preview.27",
+    "ReleasePage":  "https://github.com/memeseonew-eng/Tally/releases/tag/v0.5.11-preview.33",
     "AllReleases":  "https://github.com/memeseonew-eng/Tally/releases",
     "AutomaticUpdate":  false,
-    "CreatedDate":  "2026-11-06",
-    "ApplicationDllSha256":  "F21ADFA4661958749B152C2D91581ECBEE8F848187E4A8F5B10D2F66AA5189C2",
+    "CreatedDate":  "2026-11-07",
+    "ApplicationDllSha256":  "459A6F484FF9998319FB85EBD453AFF5B0D99DF459538B40E46F0B2090582FA4",
     "ApplicationRebuilt":  true,
     "Files":  [
                   {
                       "Edition":  "Portable",
-                      "Sha256":  "18A92825AEAB09E26B0A5F83975A5AC857720A8A9C029E5941246A20A450527E",
-                      "DownloadUrl":  "https://github.com/memeseonew-eng/Tally/releases/download/v0.5.11-preview.27/Tally-Portable-v0.5.11-preview.27-win-x64.zip",
-                      "Filename":  "Tally-Portable-v0.5.11-preview.27-win-x64.zip",
-                      "Bytes":  86667218
+                      "Sha256":  "C173736E2BE5FBE13084330ACCF07679CEF4F3C173229916D96B49B49388E358",
+                      "DownloadUrl":  "https://github.com/memeseonew-eng/Tally/releases/download/v0.5.11-preview.33/Tally-Portable-v0.5.11-preview.33-win-x64.zip",
+                      "Filename":  "Tally-Portable-v0.5.11-preview.33-win-x64.zip",
+                      "Bytes":  86696711
                   },
                   {
                       "Edition":  "Setup",
-                      "Sha256":  "C6CE76316BF1E2C6AC850BFBB16E4A16536B5947FA657E109E6F4B6740A51D26",
-                      "DownloadUrl":  "https://github.com/memeseonew-eng/Tally/releases/download/v0.5.11-preview.27/Tally-Setup-v0.5.11-preview.27-win-x64.exe",
-                      "Filename":  "Tally-Setup-v0.5.11-preview.27-win-x64.exe",
-                      "Bytes":  62039670
+                      "Sha256":  "11EED491645AAD2D72090FF7F6071ACB1FBD43E20A565DAA8A006E21B11D1564",
+                      "DownloadUrl":  "https://github.com/memeseonew-eng/Tally/releases/download/v0.5.11-preview.33/Tally-Setup-v0.5.11-preview.33-win-x64.exe",
+                      "Filename":  "Tally-Setup-v0.5.11-preview.33-win-x64.exe",
+                      "Bytes":  62068872
                   }
               ],
-    "ChecksumsUrl":  "https://github.com/memeseonew-eng/Tally/releases/download/v0.5.11-preview.27/SHA256SUMS.txt",
+    "ChecksumsUrl":  "https://github.com/memeseonew-eng/Tally/releases/download/v0.5.11-preview.33/SHA256SUMS.txt",
     "LocalData":  {
                       "Setup":  "%LOCALAPPDATA%\\Tally\\data",
                       "Portable":  "data/ beside Tally.exe"
                   },
-    "PreviousReleaseTag":  "v0.5.11-preview.25",
+    "PreviousReleaseTag":  "v0.5.11-preview.27",
     "NotIncluded":  [
                         "External plugins / public API / AI integration",
                         "US stock charts - research only"

@@ -1,4 +1,26 @@
-# Current public release — 0.5.11-preview.27 (2026-11-06)
+## 0.5.11-preview.33 — 2026-11-07
+
+Changes since public Preview27:
+
+- Hide and recall the separated Navigation card without joining it; retain pane placement and compact-layout access.
+- Keep large Notes libraries responsive with recycling virtualization.
+- Export TXT/Markdown or delete a note from its library row or document tab; ordinary tab X still closes only the tab.
+- Reorder Notes at same-folder row edges while preserving the center folder-creation action.
+- Save display order for Transactions and active Subscriptions without changing financial dates, totals or payment history.
+- Add lifted drag previews, moving neighbors and Escape cancellation.
+- Remove the extra outer frame from lifted rows while keeping their original contour, content and intentional lift shadow.
+- Keep attachment thumbnails, Collection photo icons and entry covers inside their intended rounded surfaces.
+- Add horizontal widget transitions and brief menu, chart, progress, insights and guarded Quit motion.
+- Keep one sliding Money/Daily selection highlight during hover and press, removing overlapping capsules during mode changes.
+- Dismiss command-result notices automatically, including unsuccessful results, without weakening save or confirmation guards.
+- Improve compact finance headers, insight text wrapping, input states and Korean Notes text.
+- Include the self-contained x64 runtime 10.0.14.
+
+See [release notes](RELEASE_NOTES_PREVIEW33.md) for scope and verification. Setup qualification is compilation/static checks only; fresh install/uninstall execution is **NOT_RUN**.
+
+---
+
+## Previous public release — 0.5.11-preview.27 (2026-11-06)
 
 - Adds matching minimize/restore motion to joined and separate panes without changing native geometry or remembered placement.
 - Completes and validates full-width fast caption capture and persistent joined/separated window positions, sizes, order and hidden Workspace state.
