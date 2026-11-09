@@ -1,3 +1,19 @@
+## 0.5.11-preview.36 — 2026-11-09
+
+Changes since public Preview33:
+
+- A restrained Liquid Glass-inspired widget, inset corners, soft perimeter and matching two-line resize grip.
+- More legible small action buttons with safer padding and reduced curvature.
+- Optional **Start with Windows** switch and startup-registration ownership protections.
+- Full-opacity first Notes render and retained large-list virtualization.
+- Notes library width 226 → 210 DIPs; long titles use bounded ellipsis.
+- 160 ms fading/upward exit and continuous reversal for the Navigation recall control; pane hide/Join behavior preserved.
+- Exact verified Preview36 application runtime packaged for Portable and per-user Setup.
+- Stable Setup AppId, installation directory and separate personal profile support **manual in-place upgrades**, not automatic downloads.
+
+[Preview36 release notes](RELEASE_NOTES_PREVIEW36.md) include test scope and boundaries. New public Setup execution/uninstall is **NOT_RUN**, though an earlier local Setup upgrade completed successfully.
+
+---
 ## 0.5.11-preview.33 — 2026-11-07
 
 Changes since public Preview27:

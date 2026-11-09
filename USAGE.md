@@ -1,8 +1,8 @@
 # Using Tally
 
-**0.5.11-preview.33 · 2026-11-07 · Windows x64 · Bundled runtime 10.0.14**
+**0.5.11-preview.36 · 2026-11-09 · Windows x64 · Bundled runtime 10.0.14**
 
-[Overview](README.md) · [Release notes](RELEASE_NOTES_PREVIEW33.md)
+[Overview](README.md) · [Release notes](RELEASE_NOTES_PREVIEW36.md)
 
 ## Start with the right profile
 
@@ -12,6 +12,13 @@ Setup shortcuts use **%LOCALAPPDATA%\Tally\data**. Setup and portable folders do
 
 Normal startup opens the desktop widget. Use its workspace launcher or the tray menu to open full Tally.
 
+## Updated widget, Notes library and Windows startup
+
+The widget retains Money/Daily and the existing content layout, now with a softer inset glass surface, a matching two-line resize grip and readable foreground text. Resize from its bottom-right corner when position locking is off.
+
+The Notes library is intentionally slightly narrower at 210 DIPs. Long note titles end in ellipses, without changing their stored text; document tabs, virtualized rows and drag behavior remain intact. Initial document text no longer starts faded.
+
+Use **Settings → Start with Windows** to enable or disable sign-in startup for the installed profile. The Setup does not switch it on automatically. This is not automatic version updating: obtain and run new installers from the official GitHub release page.
 ## Windows, cards and quitting
 
 Use the split control to separate Navigation and Workspace. Drag their blank upper caption areas to move them. Buttons and the brand artwork are not interchangeable with those drag areas. Separated cards have a bottom-right resize handle.
@@ -129,7 +136,7 @@ Windows animation and high-contrast policy govern decorative motion. With motion
 
 1. Choose **Quit Tally**, then confirm the application has exited.
 2. Back up the entire selected profile. The included **Backup-Tally.ps1** refuses live-profile copies and verifies the archive it creates.
-3. Preserve that backup, then replace program files while retaining the original profile.
+3. Run the newer Setup over the existing installation to update app files in place; its AppId, install directory and shortcut profile remain stable. For portable, replace program files without overwriting the data directory.
 4. Reopen the same profile and verify your records.
 
 Include all SQLite databases and WAL/SHM sidecars, Notes/tasks/Collections, receipts, attachments, icons, wallpaper copies, preferences and recovery files. A single database copy, note export or source Git bundle is not a complete personal backup. Do not merge independently edited profiles.
@@ -150,17 +157,18 @@ Report the exact version, Windows/display scale, theme and reproduction steps wi
 
 ## Release verification and scope
 
-**Version 0.5.11-preview.33 · 2026-11-07 · Windows x64**
+**Version 0.5.11-preview.36 · 2026-11-09 · Windows x64**
 
 | Evidence | Result |
 | --- | --- |
-| Automated WPF application checks | 1,635 passed; zero binding errors |
-| Native widget, menu, notice, insights and Quit checks | 10 passed |
-| Native pointer reorder, cancellation and restart checks | 17 passed |
-| Application DLL SHA256 | `459A6F484FF9998319FB85EBD453AFF5B0D99DF459538B40E46F0B2090582FA4` |
-| Recorded native environment | Current Windows 11 x64 device, 96 DPI (100% scaling). |
-| Setup qualification | Compilation and static package/retention checks only. Fresh install/uninstall execution: **NOT_RUN**. |
+| Full WPF application checks | **1,808 passed**; zero binding errors |
+| Window geometry checks | **86 passed** |
+| Focused Navigation transition | **28 passed** |
+| Exact candidate and installed native checks | **20 / 20 passed**, synthetic data |
+| Tally.dll SHA256 | **08E24C61D09A1C95E978E2F6190DE7C71103B4A07E4CC18B48EF54E1222C45A2** |
+| Existing local Setup upgrade | Exit 0; program/data preservation verified |
+| New public Setup | Same stable AppId and data path; compile/static checks only; execution/uninstall **NOT_RUN** |
+| Public Portable ZIP | Extracted; every file hash matched |
 
-Native Quit checks confirm guarded exit. PrintWindow captures do not certify the full compositor fade or exact visual timing.
-
+These checks cover the recorded environment and selected native states, not all display hardware or every animation frame. The separately compiled public Setup was not used to update the personal installation.
 Results apply to the recorded scenarios and exact release program set. Other Windows versions, GPUs, physical mixed-DPI monitor arrangements, complete accessibility coverage and long-running environmental behavior are not certified by these checks. Compilation and static inspection are not fresh installer execution.

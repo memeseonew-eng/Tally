@@ -6,16 +6,27 @@ Tally is a local Windows workspace for expenses, subscriptions, daily tasks, not
 
 **No required account · No required cloud service · Portable or installed · Local data**
 
-[Portable ZIP — Preview33](https://github.com/memeseonew-eng/Tally/releases/download/v0.5.11-preview.33/Tally-Portable-v0.5.11-preview.33-win-x64.zip) · [Windows Setup — Preview33](https://github.com/memeseonew-eng/Tally/releases/download/v0.5.11-preview.33/Tally-Setup-v0.5.11-preview.33-win-x64.exe) · [All published versions](https://github.com/memeseonew-eng/Tally/releases)
+[Portable ZIP — Preview36](https://github.com/memeseonew-eng/Tally/releases/download/v0.5.11-preview.36/Tally-Portable-v0.5.11-preview.36-win-x64.zip) · [Windows Setup — Preview36](https://github.com/memeseonew-eng/Tally/releases/download/v0.5.11-preview.36/Tally-Setup-v0.5.11-preview.36-win-x64.exe) · [All published versions](https://github.com/memeseonew-eng/Tally/releases)
 
-**Current preview: 0.5.11-preview.33 · 2026-11-07 · Windows x64 · Unsigned prerelease**
+**Current preview: 0.5.11-preview.36 · 2026-11-09 · Windows x64 · Unsigned prerelease**
 
-[Usage guide](USAGE.md) · [What changed since Preview27](RELEASE_NOTES_PREVIEW33.md)
+[Usage guide](USAGE.md) · [What changed since Preview33](RELEASE_NOTES_PREVIEW36.md) · [Previous release notes](RELEASE_NOTES_PREVIEW33.md)
 
-*Screenshots below are existing product illustrations with synthetic records, not new Preview33 acceptance captures.*
+*Screenshots below use synthetic records and are illustrative, not new Preview36 acceptance captures.*
 
 ![Recorded spending with synthetic demonstration records](screenshots/tally-spending-current.png)
 
+## New in Preview36
+
+The widget now has a more cohesive **Liquid Glass-inspired inset surface**, a soft outer contour, and a two-line resize grip. Labels remain sharp and the existing Money/Daily interaction is unchanged. Small text buttons have safer padding and less exaggerated rounding.
+
+**Settings → Start with Windows** offers a single optional On/Off switch. The Setup upgrade preserves the existing registration; it does not enable startup on its own. This is not an automatic version downloader.
+
+**Notes** show their initial document text at full opacity. The virtualized library is slightly narrower (**226 → 210 DIPs**) and long titles now use ellipsis rather than clipping in the middle of letters.
+
+After restoring hidden Navigation, the small Workspace recall control **fades and slides away over 160 ms**, with smooth interruption/reversal. The Navigation X still hides the pane; Join is explicit.
+
+[Full changes and verification](RELEASE_NOTES_PREVIEW36.md).
 ## What you can do
 
 | Workspace | Useful for |
@@ -140,7 +151,7 @@ The default full window is 1040 × 700 logical units, approximately 1300 × 875 
 
 Use light or dark appearance, choose a local wallpaper, and adjust the available background/material controls. Managed wallpaper copies let the app retain its background after the original selected file moves.
 
-The widget offers compact mode, optional recent/category/upcoming content, keep-on-top and position locking. Additional style controls are optional. Saved appearance choices remain separate from financial records.
+The widget offers compact mode, optional recent/category/upcoming content, keep-on-top and position locking. Additional style controls are optional. Saved appearance choices remain separate from financial records. The optional **Start with Windows** setting is independent of manual Setup version updates.
 
 Brief, consistent motion is used for Notes action menus, Money/Daily and recent-period transitions, list dragging, spending/category/task progress, expandable insights, command feedback and guarded Quit. Numeric values and commands remain immediate; decorative motion does not change financial facts or native window placement. Windows animation and high-contrast policy govern decorative motion. Command-result notices, including unsuccessful results, dismiss automatically after a brief interval. A newer result receives its own interval. Expiry does not discard a draft or turn a failed operation into a successful one. Unresolved validation, blocked refresh and unsaved-state explanations remain available until addressed.
 
@@ -172,7 +183,7 @@ Both editions bundle the x64 .NET and Windows Desktop runtime **10.0.14**.
 
 1. Choose **Quit Tally**. Closing a window or hiding the widget is not a complete exit.
 2. Back up the entire current profile to a private location. The included Backup-Tally.ps1 helper refuses a live-profile copy and verifies the contents it archives.
-3. Preserve the backup, then replace program files without overwriting your data with an empty profile.
+3. For the installed edition, run the newer Setup over the existing installation. It keeps the same AppId and per-user directory, and the shortcut keeps **%LOCALAPPDATA%\Tally\data**. For portable, replace the extracted program files without overwriting data/.
 4. Reopen the same profile and verify your records. Do not merge two independently edited databases.
 
 A complete profile includes financial, Daily and Collections databases and their SQLite sidecars, notes, receipts, attachments, photo icons, wallpaper copies, preferences and recovery records. Copying only tally.sqlite is not a whole-workspace backup.
@@ -185,23 +196,24 @@ A private developer/source recovery ZIP is a different artifact: it contains cod
 
 Tally is an unsigned prerelease. Windows may show an unrecognized-publisher warning. Verify downloads against the checksum list from the same official release and keep your security protections enabled.
 
-[Preview33 checksums](https://github.com/memeseonew-eng/Tally/releases/download/v0.5.11-preview.33/SHA256SUMS.txt)
+[Preview36 checksums](https://github.com/memeseonew-eng/Tally/releases/download/v0.5.11-preview.36/SHA256SUMS.txt)
 
 ## Release verification and scope
 
-**Version 0.5.11-preview.33 · 2026-11-07 · Windows x64**
+**Version 0.5.11-preview.36 · 2026-11-09 · Windows x64**
 
 | Evidence | Result |
 | --- | --- |
-| Automated WPF application checks | 1,635 passed; zero binding errors |
-| Native widget, menu, notice, insights and Quit checks | 10 passed |
-| Native pointer reorder, cancellation and restart checks | 17 passed |
-| Application DLL SHA256 | `459A6F484FF9998319FB85EBD453AFF5B0D99DF459538B40E46F0B2090582FA4` |
-| Recorded native environment | Current Windows 11 x64 device, 96 DPI (100% scaling). |
-| Setup qualification | Compilation and static package/retention checks only. Fresh install/uninstall execution: **NOT_RUN**. |
+| Full WPF application checks | **1,808 passed**; zero binding errors |
+| Window geometry checks | **86 passed** |
+| Focused Navigation transition | **28 passed** |
+| Exact candidate and installed native checks | **20 / 20 passed**, synthetic data |
+| Tally.dll SHA256 | **08E24C61D09A1C95E978E2F6190DE7C71103B4A07E4CC18B48EF54E1222C45A2** |
+| Existing local Setup upgrade | Exit 0; program/data preservation verified |
+| New public Setup | Same stable AppId and data path; compile/static checks only; execution/uninstall **NOT_RUN** |
+| Public Portable ZIP | Extracted; every file hash matched |
 
-Native Quit checks confirm guarded exit. PrintWindow captures do not certify the full compositor fade or exact visual timing.
-
+These checks cover the recorded environment and selected native states, not all display hardware or every animation frame. The separately compiled public Setup was not used to update the personal installation.
 Results apply to the recorded scenarios and exact release program set. Other Windows versions, GPUs, physical mixed-DPI monitor arrangements, complete accessibility coverage and long-running environmental behavior are not certified by these checks. Compilation and static inspection are not fresh installer execution.
 
 Updates are manual through the official release page. There is no bank connection, automatic currency conversion, built-in cloud sync, external plugin marketplace or public automation API. US stock charts remain research, not a feature in this package.
